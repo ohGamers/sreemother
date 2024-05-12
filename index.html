@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day!</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff69b4;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Specific Section Styles */
+        #home {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #about {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        #gallery {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #contact {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Interactive and Colorful Animations */
+        .heart {
+            color: #e74c3c;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(0.75);
+            }
+            20% {
+                transform: scale(1);
+            }
+            40% {
+                transform: scale(0.75);
+            }
+            60% {
+                transform: scale(1);
+            }
+            80% {
+                transform: scale(0.75);
+            }
+            100% {
+                transform: scale(0.75);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .rotate {
+            animation: rotate 2s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Mother's Day, Mom!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Mom</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to the Celebration of Love!</h2>
+            <p class="pulse">Dear Mom, this website is dedicated to you on this special day. Scroll down to explore!</p>
+            <!-- Add colorful and animated elements here -->
+            <div class="heart">&#10084;</div>
+        </section>
+
+        <section id="about">
+            <h2>All About Mom</h2>
+            <p class="rotate">Here's a glimpse into the amazing person that you are, Mom! We love you!</p>
+            <!-- Add information about your mom with animations -->
+        </section>
+
+        <section id="gallery">
+            <h2>Memories with Mom</h2>
+            <!-- Add a gallery of photos and videos with animations -->
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <!-- Add a contact form with colorful and interactive animations -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© Your Name 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
